@@ -1,1 +1,28 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+$light: #f3f3f3;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+);
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.fondo_azul{
+  position: relative;
+  width: max-content;
+  margin: 40px;
+}
+.fondo_azul::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 200px;
+  width: 100vw;
+  height: 360px;
+  background-color: $primary;
+  border-radius: 200px;
+  z-index: -1;
+}
