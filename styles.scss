@@ -10,19 +10,39 @@ $theme-colors: (
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
-.fondo_azul{
+.fondo_azul_derecha{
   position: relative;
   width: max-content;
   margin: 40px;
 }
-.fondo_azul::before {
+.fondo_azul_derecha::before {
   content: '';
   position: absolute;
   bottom: -20px;
-  left: 200px;
-  width: 100vw;
+  left: 180px;
+  width: 100vh;
   height: 360px;
   background-color: $primary;
   border-radius: 200px;
   z-index: -1;
+}
+.fondo_azul_izquierda{
+  position: relative;
+  width: max-content;
+  margin: 40px;
+}
+.fondo_azul_izquierda::before {
+  content: '';
+  position: absolute;
+  bottom: -95px;
+  right: 80px;
+  width: 100vh;
+  height: 360px;
+  background-color: $primary;
+  border-radius: 200px;
+  z-index: -1;
+}
+
+p{
+  color: grey;
 }
