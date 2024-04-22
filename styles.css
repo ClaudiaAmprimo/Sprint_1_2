@@ -11507,7 +11507,7 @@ textarea.form-control-lg {
   position: absolute;
   bottom: -20px;
   left: 180px;
-  width: 80%;
+  width: 90%;
   height: 360px;
   background-color: #5265E1;
   border-bottom-left-radius: 200px;
@@ -11526,7 +11526,7 @@ textarea.form-control-lg {
   position: absolute;
   bottom: -95px;
   right: 80px;
-  width: 100vh;
+  width: 120%;
   height: 360px;
   background-color: #5265E1;
   border-bottom-right-radius: 200px;
@@ -11554,4 +11554,45 @@ p {
 .card a {
   font-size: small;
   width: 100%;
+}
+
+#accordionFlushExample {
+  width: 50%;
+}
+
+@media (max-width: 576px) {
+  .fondo_azul_derecha {
+    position: relative;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 40px;
+  }
+  .fondo_azul_derecha::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 80px;
+    width: 100vh;
+    height: 260px;
+    background-color: #5265E1;
+    border-bottom-left-radius: 200px;
+    z-index: -1;
+  }
+  .fondo_azul_izquierda {
+    position: relative;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 40px;
+  }
+  .fondo_azul_izquierda::before {
+    content: "";
+    position: absolute;
+    bottom: -95px;
+    right: 80px;
+    width: 120%;
+    height: 280px;
+    background-color: #5265E1;
+    border-bottom-right-radius: 200px;
+    z-index: -1;
+  }
 }/*# sourceMappingURL=styles.css.map */
