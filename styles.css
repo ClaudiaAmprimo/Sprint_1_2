@@ -11495,6 +11495,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
 .fondo_azul_derecha {
   position: relative;
   width: -moz-max-content;
@@ -11557,9 +11561,52 @@ p {
 }
 
 #accordionFlushExample {
-  width: 50%;
+  width: 60%;
 }
 
 .btn-single-line {
   white-space: nowrap;
+}
+
+.nav-underline .nav-link {
+  color: grey;
+}
+
+.nav-underline .nav-link.active {
+  color: black;
+  border-bottom: 3px solid #FA5959;
+}
+
+.nav-underline .nav-link:hover {
+  border-bottom: 3px solid #FA5959;
+}
+
+#navbar-bottom {
+  background-color: black;
+}
+#navbar-bottom a {
+  color: white;
+}
+
+#exampleInputEmail1 {
+  width: 40%;
+}
+
+.footer-p {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #accordionFlushExample {
+    width: 100%;
+  }
+  .responsive-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nav-item {
+    width: 50%;
+    flex-direction: row;
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
