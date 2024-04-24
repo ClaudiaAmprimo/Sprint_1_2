@@ -84,9 +84,14 @@ width: 60%;
 }
 #navbar-bottom{
   background-color: black;
-  a{
+  a.nav-link{
     color:white;
+    margin-right: 15px;
   }
+  img{
+    vertical-align: middle;
+  }
+
 }
 #exampleInputEmail1{
   width: 40%;
@@ -104,12 +109,12 @@ width: 60%;
     display: flex;
     flex-direction: column-reverse;
   }
-  .nav-item{
-    width: 50%;
-    flex-direction: row;
+  .nav-item .navbar-nav{
+    flex-direction: column;
     text-align: center;
+    margin-left: 0;
   }
-  .form-label{
-    
+  .logos-footer{
+    flex-direction: row;
   }
 }

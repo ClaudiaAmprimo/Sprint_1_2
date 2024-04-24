@@ -11584,8 +11584,12 @@ p {
 #navbar-bottom {
   background-color: black;
 }
-#navbar-bottom a {
+#navbar-bottom a.nav-link {
   color: white;
+  margin-right: 15px;
+}
+#navbar-bottom img {
+  vertical-align: middle;
 }
 
 #exampleInputEmail1 {
@@ -11604,9 +11608,12 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
-  .nav-item {
-    width: 50%;
-    flex-direction: row;
+  .nav-item .navbar-nav {
+    flex-direction: column;
     text-align: center;
+    margin-left: 0;
+  }
+  .logos-footer {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=styles.css.map */
