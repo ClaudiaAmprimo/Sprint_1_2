@@ -11568,17 +11568,18 @@ p {
   white-space: nowrap;
 }
 
-.nav-underline .nav-link {
-  color: grey;
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #FA5959;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.nav-underline .nav-link.active {
-  color: black;
-  border-bottom: 3px solid #FA5959;
-}
-
-.nav-underline .nav-link:hover {
-  border-bottom: 3px solid #FA5959;
+.nav-tabs .nav-link {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: gray;
 }
 
 #navbar-bottom {

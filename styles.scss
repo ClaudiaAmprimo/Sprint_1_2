@@ -72,16 +72,19 @@ width: 60%;
 .btn-single-line{
   white-space: nowrap;
 }
-.nav-underline .nav-link{
-  color: grey;
-}
-.nav-underline .nav-link.active{
-  color: black;
+.nav-tabs .nav-link.active{
   border-bottom: 3px solid $secondary;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-.nav-underline .nav-link:hover {
-  border-bottom: 3px solid $secondary;
+.nav-tabs .nav-link{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: gray;
 }
+
 #navbar-bottom{
   background-color: black;
   a.nav-link{
@@ -91,7 +94,6 @@ width: 60%;
   img{
     vertical-align: middle;
   }
-
 }
 #exampleInputEmail1{
   width: 40%;
@@ -99,7 +101,6 @@ width: 60%;
 .footer-p{
   color:white;
 }
-
 
 @media (max-width: 768px) {
   #accordionFlushExample{
