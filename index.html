@@ -212,11 +212,14 @@
           <p class="footer-p mt-4">37.000 ALREADY JOIN</p>
           <h4 class="mb-5">Stay up-to-date with what<br>
             we are doing</h4>
-          <form class="row needs-validation">
-            <div class="form-email col mb-3 d-flex justify-content-center gap-3 mb-5">
+          <form class="row needs-validation" novalidate>
+            <div class="form-email col mb-3 d-flex justify-content-center gap-3 mb-5 position-relative">
               <label for="exampleInputEmail1" class="form-label"></label>
               <input type="email" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp" placeholder="Enter your email address" required>
+                aria-describedby="emailHelp" placeholder="Enter your email address" required>
+              <div class="invalid-tooltip">
+                Whoops, make sure it's an email
+              </div>
               <button type="submit" class="btn btn-secondary">Contact Us</button>
             </div>
           </form>
@@ -241,12 +244,12 @@
               </li>
             </ul>
             <ul class="navbar-nav logos-footer">
-              <li class="nav-item">
+              <li class="nav-item logo-social">
                 <a class="nav-link" href="#">
                   <img src="imagenes/icon-facebook.svg" alt="Logo Facebook">
                 </a>
               </li>
-              <li class="nav-item d-inline">
+              <li class="nav-item d-inline logo-social">
                 <a class="nav-link" href="#">
                   <img src="imagenes/icon-twitter.svg" alt="Logo twitter">
                 </a>
@@ -257,5 +260,26 @@
       </nav>
   </footer>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
 </body>
 </html>
